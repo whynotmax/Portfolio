@@ -11,7 +11,7 @@ To clone the repository, follow these steps:
 3. Run the following command:
 
     ```
-    git clone https://github.com/your-username/your-portfolio.git
+    git clone https://github.com/whynotmax/Portfolio.git
     ```
 
 4. Once the cloning process is complete, you will have a local copy of the repository on your machine.
@@ -25,7 +25,7 @@ If you would like to contribute to my portfolio, please follow these guidelines:
 3. Create a new branch for your changes:
 
     ```
-    git checkout -b your-branch-name
+    git checkout -b main
     ```
 
 4. Make your desired changes to the portfolio files.
@@ -38,7 +38,7 @@ If you would like to contribute to my portfolio, please follow these guidelines:
 6. Push your changes to your forked repository:
 
     ```
-    git push origin your-branch-name
+    git push origin main
     ```
 
 7. Open a pull request on the original repository, explaining the changes you made and why they should be merged.
