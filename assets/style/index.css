@@ -80,22 +80,20 @@ body {
 }
 
 .card {
-    /* Other styles... */
-    background-color: #1d2127; /* Brighter background color */
-    position: relative; /* Needed to position the pseudo-element */
-    box-shadow: 0 0 50px rgba(0,0,0,0.5); /* Initial box shadow */
-    transition: box-shadow 0.3s ease-in-out; /* Transition for smooth box shadow effect */
-    overflow: hidden; /* To contain the pseudo-element within the card */
+    background-color: #1d2127;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    transition: box-shadow 0.3s ease-in-out;
+    overflow: hidden;
 }
 
 .card:hover {
-    box-shadow: 0 0 100px currentColor; /* Box shadow on hover */
+    box-shadow: 0 0 100px currentColor;
     animation: color-cycle 5s infinite;
 }
 
 .card::before {
-    /* Other styles... */
-    box-shadow: none; /* Remove box shadow from pseudo-element */
+    box-shadow: none;
 }
 
 
@@ -135,4 +133,27 @@ body {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+}
+
+footer {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%), translateY(-40%);
+    font-size: 10px;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #0d1117;
+    color: #c9d1d9;
 }
