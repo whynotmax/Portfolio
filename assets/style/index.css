@@ -84,7 +84,7 @@ body {
     background-color: #1d2127; /* Brighter background color */
     position: relative; /* Needed to position the pseudo-element */
     box-shadow: 0 0 50px rgba(0,0,0,0.5); /* Initial box shadow */
-    transition: box-shadow 0.3s ease; /* Transition for smooth box shadow effect */
+    transition: box-shadow 0.3s ease-in-out; /* Transition for smooth box shadow effect */
     overflow: hidden; /* To contain the pseudo-element within the card */
 }
 
