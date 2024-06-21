@@ -1,43 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 
 body {
     background-color: #0d1117;
+    box-sizing: border-box;
     /*color: #c9d1d9;*/
 }
 
-#app {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: calc(100% - 300px);
-    max-width: 900px;
-    padding: 150px;
-    margin: 50px;
-    box-sizing: border-box;
-    min-height: 100vh;
+h1, h2 {
+    padding: 0;
+    margin: 0;
 }
 
 .card {
-    position: relative;
-    width: 500px;
-    height: 500px;
-    margin: 0 auto;
     box-sizing: border-box;
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 33rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .app {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: calc(100vh - 20px);
 }
 
 .card h2, .card p {
@@ -50,21 +44,21 @@ body {
     gap: 25px;
 }
 
-.card .buttons button {
+.card .buttons a {
     padding: 10px 20px;
-    transition: all 0.5s ease;
-    border: 2px solid #ffffff;
+    background: linear-gradient(to right bottom, #e66465, #9198e5);
     border-radius: 25px;
+    transition: transform 0.25s ease-in-out, box-shadow 0.30s ease-in-out;
 }
 
-.card .buttons button:hover {
-    border-color: #000000;
-    background-color: #444444;
-    color: #ffffff;
+.card .buttons a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 5px rgba(145, 152, 229, 0.53);
 }
 
-.buttons button span {
-    font-size: xx-large;
+.buttons a span {
+    color: #EEF7FF;
+    font-size: x-large;
 }
 
 .card p {
@@ -81,62 +75,39 @@ body {
 
 .card {
     background-color: #1d2127;
+    outline: 2px solid rgba(79, 86, 96, 0.34);
     position: relative;
-    box-shadow: 0 0 50px rgba(0,0,0,0.5);
-    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
     overflow: hidden;
+    transition: box-shadow 0.45s ease-in-out;
+
 }
 
 .card:hover {
-    box-shadow: 0 0 100px currentColor;
-    animation: color-cycle 5s infinite;
-}
-
-.card::before {
-    box-shadow: none;
-}
-
-
-@keyframes color-cycle {
-    0% { color: rgb(255, 0, 0); }
-    14% { color: rgb(255, 255, 0); }
-    28% { color: rgb(0, 255, 0); }
-    42% { color: rgb(0, 255, 255); }
-    57% { color: rgb(0, 0, 255); }
-    71% { color: rgb(255, 0, 255); }
-    85% { color: rgb(255, 0, 0); }
-    100% { color: rgba(255, 255, 255, 0.3); }
+    box-shadow: 0 0 200px rgba(255, 255, 255, 0.48);
 }
 
 .card h2 {
     margin: 0 0 10px 0;
     font-size: 24px;
-    font-weight: bold;
     color: #ffffff;
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 550;
     font-style: normal;
 }
 
-.card p {
+.card .desc p {
     color: #ffffff;
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
 }
 
-.buttons * {
-    color: #000000;
-    font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-}
 
 footer {
-    position: fixed;
+    position: absolute;
     display: flex;
     bottom: 0;
     font-size: 10px;
@@ -144,19 +115,16 @@ footer {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    bottom: 0;
     left: 0;
     width: 100%;
     padding: 10px 0;
     background-color: #0d1117;
     color: #c9d1d9;
     text-align: center;
-    width: 100%;
-    padding: 10px 0;
-    background-color: #0d1117;
-    color: #c9d1d9;
+}
+
+footer p a {
+    color: white;
 }
